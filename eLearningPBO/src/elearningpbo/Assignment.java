@@ -12,6 +12,7 @@ package elearningpbo;
 public class Assignment {
     private String assignCode;
     private String assignName;
+    private String assignDueDate;
     
     
     public void setAssignCode(String kode){
@@ -28,5 +29,13 @@ public class Assignment {
     
     public String getAssignName(){
         return assignName;
+    }
+    
+    public void setAssignDueDate(String tanggal){
+        this.assignDueDate = tanggal;
+    }
+    
+    public String getAssignDueDate(){
+        return assignDueDate;
     }
 }
