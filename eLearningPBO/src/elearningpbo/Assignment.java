@@ -15,24 +15,24 @@ public class Assignment {
     private String assignDueDate;
     
     
-    public void setAssignCode(String kode){
-        this.assignCode = kode;
+    public void setAssignCode(String code){
+        this.assignCode = code;
     }
     
     public String getAssignCode(){
         return assignCode;
     }
     
-    public void setAssignName(String nama){
-        this.assignName = nama;
+    public void setAssignName(String code){
+        this.assignName = code;
     }
     
     public String getAssignName(){
         return assignName;
     }
     
-    public void setAssignDueDate(String tanggal){
-        this.assignDueDate = tanggal;
+    public void setAssignDueDate(String date){
+        this.assignDueDate = date;
     }
     
     public String getAssignDueDate(){
