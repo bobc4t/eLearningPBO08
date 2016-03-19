@@ -7,15 +7,12 @@ package elearningpbo;
 
 /**
  *
- * @author radenpioneer
+ * @author deni2live
  */
-public class ELearningPBO {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Classroom {
+    private Subject subjek;
     
+    public void setSubject(){
+        
+    }
 }
