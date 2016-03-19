@@ -28,10 +28,4 @@ public class Subject {
     public String getSubjectName(){
         return subjectName;
     }
-    
-    public Subject(String code, String name)
-    {
-        setSubjectCode(code);
-        setSubjectCode(name);
-    }
 }
