@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author deni2live
  */
 public class Classroom {
+    private Subject subjek;
     
     private String classCode; //Variable for storing class code
     public void setClassCode(String classCode)
