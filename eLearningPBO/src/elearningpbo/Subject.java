@@ -13,26 +13,19 @@ public class Subject {
     private String subjectCode;
     private String subjectName;
     
-    public void setSubjectCode(String code){
-        this.subjectCode = code;
+    public void setSubjectCode(String kode){
+        this.subjectCode = kode;
     }
     
     public String getSubjectCode(){
         return subjectCode;
     }
     
-    public void setSubjectName(String name){
-        this.subjectName = name;
+    public void setSubjectName(String nama){
+        this.subjectName = nama;
     }
     
     public String getSubjectName(){
         return subjectName;
     }
-    
-    public Subject(String code, String name)
-    {
-        setSubjectCode(code);
-        setSubjectName(name);
-    }
-            
 }

@@ -10,31 +10,9 @@ package elearningpbo;
  * @author deni2live
  */
 public class Classroom {
+    private Subject subjek;
     
-    private String classCode;
-    public void setClassCode(String classCode)
-    {
-        this.classCode = classCode;
+    public void setSubject(){
+        
     }
-    public String getClassCode()
-    {
-        return classCode;
-    }
-   
-    private Subject subject;
-    public void setSubject(String code, String name)
-    {
-        subject = new Subject(code, name);
-    }
-    public String getSubjectName()
-    {
-        String subjectName = this.subject.getSubjectName();
-        return subjectName;
-    }
-    public String getSubjectCode()
-    {
-        String subjectName = this.subject.getSubjectName();
-        return subjectName;
-    }
-   
 }
