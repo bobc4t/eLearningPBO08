@@ -9,6 +9,7 @@ package elearningpbo;
  *
  * @author radenpioneer
  */
+import java.util.Scanner;
 public class Lecturer extends Person
 {
     String idLecturer;
@@ -21,8 +22,8 @@ public class Lecturer extends Person
         return idLecturer;
     }
     
-    Classroom listClassroom[];
-    int classtotal = 0;
+    protected Classroom listClassroom[];
+    private int classtotal = 0;
     
     public Lecturer(String email, String password, String name, String idLecturer)
     {
@@ -34,7 +35,27 @@ public class Lecturer extends Person
     
     public void createClassroom()
     {
+        String classCode = inputClassCode();
         classtotal = classtotal++;
-        listClassroom[classtotal] = new Classroom();
+        listClassroom[classtotal] = new Classroom(classCode);
+    }
+    
+    public void removeClassroom(int index)
+    {
+        classtotal = classtotal--;
+        listClassroom[index] = null; //This is not final.
+    }
+    
+    public String getClassroom(int index)
+    {
+        String output = listClassroom[index].getClassCode();
+        return output;
+    }
+    
+    public String inputClassCode()
+    {
+        Scanner input = new Scanner(System.in);
+        String classCode = input.next();
+        return classCode;
     }
 }
