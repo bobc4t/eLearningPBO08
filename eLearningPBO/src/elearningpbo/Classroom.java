@@ -34,4 +34,11 @@ public class Classroom {
         tugas.setAssignDueDate(assignmentName);
     }
     
+    public Student getStudentByID(String idStudent){
+        Student hasilSearch = null;
+        if(idStudent == murid.getIdStudent()){
+            hasilSearch = murid;
+        }
+        return hasilSearch;
+    }
 }
